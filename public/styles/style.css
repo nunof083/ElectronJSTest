@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: "Century Gothic";
     height: 100vh;
-    background-image: url('./img/pexels-ella-olsson-572949-1640773.jpg');
+    background-image: url('../img/background-image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
