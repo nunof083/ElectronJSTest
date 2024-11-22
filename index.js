@@ -7,7 +7,7 @@ const createWindow = () => {
         height: 600
     });
 
-    win.loadFile('index.html');
+    win.loadFile('./public/index.html');
 }
 
 app.whenReady().then(() => {
@@ -16,12 +16,4 @@ app.whenReady().then(() => {
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
-})
-
-app.whenReady().then(() => {
-    createWindow()
-
-    app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    })
 })
