@@ -2,6 +2,10 @@ const dateName = document.getElementsByClassName("date-day-name");
 const dateComplete = document.getElementsByClassName("date-complete");
 const datehours = document.getElementsByClassName("date-hours");
 const languageInput = document.getElementById("language");
+const checkBox = document.getElementById("confirm-input-matin")
+const inputs = document.querySelectorAll(".input-matin");
+let days = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+
 
 async function dateDisplay() {
     const now = new Date();
@@ -35,6 +39,19 @@ async function dateDisplay() {
     setTimeout(dateDisplay, 1000);
 }
 
+function checkBoxChecked() {
+    if (checkBox.checked) {
+        inputs.forEach(input => {
+            input.disabled = true;
+        });
+    } else {
+        inputs.forEach(input => {
+            input.disabled = false;
+        });
+    }
+}
 
 
-dateDisplay();
+
+dateDisplay().then();
+checkBox.addEventListener('change', checkBoxChecked);

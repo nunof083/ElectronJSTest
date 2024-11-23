@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     color: white;
     margin: 0;
     font-family: "Century Gothic";
@@ -43,7 +46,12 @@ header {
     }
 }
 
+main {
+    flex: 1;
+}
+
 .date-div {
+    /*padding-top: 10%;*/
     text-align: center;
 
     .date-day-name {

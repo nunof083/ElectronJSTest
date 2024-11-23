@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.menu-container {
+    h1 {
+        text-align: center;
+    }
+    align-self: center;
+    width: 90%;
+    height: 400px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.checkbox-confirm {
+    color: #000000;
+    text-align: right;
+    padding: 0 48px 0 0;
+}
+
+.input-container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container div {
+    text-align: center;
+    padding: 20px 10px 0 10px;
+    input {
+        width: 90%;
+        text-align: center;
+    }
+}
